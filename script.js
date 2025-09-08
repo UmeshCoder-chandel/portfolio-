@@ -333,3 +333,18 @@ function throttle(func, limit) {
 window.addEventListener('scroll', throttle(function() {
     // Scroll-based animations can be optimized here
 }, 16)); // 60fps
+
+
+
+function downloadPDF() {
+      const element = document.getElementById("content");
+      html2pdf()
+        .from(element)
+        .set({
+          margin: 10,
+          filename: "image/umesh_resume.pdf",  // <-- File name when downloaded
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+        })
+        .save();
+    }
