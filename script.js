@@ -336,15 +336,3 @@ window.addEventListener('scroll', throttle(function() {
 
 
 
-function downloadPDF() {
-      const element = document.getElementById("content");
-      html2pdf()
-        .from(element)
-        .set({
-          margin: 10,
-          filename: "image/umesh_resume.pdf",  // <-- File name when downloaded
-          html2canvas: { scale: 2 },
-          jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
-        })
-        .save();
-    }
