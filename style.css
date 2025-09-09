@@ -69,6 +69,7 @@ body {
 /* Main Content */
 main {
     margin-top: 80px;
+
 }
 
 /* Section Styles */
@@ -85,6 +86,7 @@ main {
     color: #fff;
     position: relative;
     overflow: hidden;
+    
 }
 
 .home-section::before {
@@ -99,12 +101,22 @@ main {
 }
 
 .front {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
     position: relative;
     z-index: 2;
+    padding-left: 60px;
+
+}
+.f-fort {
+    text-align: left;
+    justify-self: start;
+    padding-left: 40px;
+    /* max-width: 500px; */
+
 }
 
 .f-fort h2 {
@@ -190,7 +202,9 @@ main {
 }
 
 .profile-image {
-    text-align: center;
+    text-align: right;
+    padding-right: 60px;
+     justify-self: end;
 }
 
 .profile-image img {
@@ -248,6 +262,7 @@ main {
 }
 
 .stat p {
+    color: white;
     font-size: 1rem;
     opacity: 0.9;
 }
@@ -507,6 +522,9 @@ main {
         text-align: center;
         gap: 2rem;
     }
+    .f-fort {
+        justify-self: center;
+    }   
     
     .f-fort h2 {
         font-size: 2.5rem;
